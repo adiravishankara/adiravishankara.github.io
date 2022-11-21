@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>v1</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Right-Links-icons.css">
+    <link rel="stylesheet" href="../assets/css/Projects-Grid-Horizontal-images.css">
+    <link rel="stylesheet" href="../assets/css/untitled.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav-3" style="background: var(--bs-dark);">
+            <div class="container"><a class="navbar-brand link-light" href="index.html">ADI RAVISHANKARA</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color: rgb(255,255,255);"><i class="fa fa-navicon text-light"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-uppercase" href="index.html" style="color: #ffffff;">Home</a></li>
+                        <li class="nav-item text-uppercase" style="color: #ffffff;"><a class="nav-link text-uppercase" href="about.html" style="color: #ffffff;">About ME</a></li>
+                        <li class="nav-item text-uppercase" style="color: #ffffff;"><a class="nav-link text-uppercase" href="projects.html" style="color: #ffffff;">pROJECTS</a></li>
+                        <li class="nav-item text-uppercase" style="color: #ffffff;"><a class="nav-link text-uppercase" href="blog.html" style="color: #ffffff;">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container" style="margin-top: 100px;">
+        <h1 class="fw-normal text-center">Baby's First Web App</h1>
+        <p>You spent some time developing a really cool function that takes some awesome inputs and spits out something amazing. Let’s call it, <em>myAwesomeFunction</em>. Now you want to share it with the world but creating a whole website around this is hard work. Making it pretty, figuring out the interfacing between the front-end and back-end. Where to host it? All of this takes time to learn. So what should you do. Well if you are anything like me and want to spend less than a day worrying about this, then I would say to use <a href="https://streamlit.io">streamlit.io</a>.<br></p>
+        <p>Streamlit is an simple python app builder. Similar to <a href="https://dash.plotly.com">Dash</a>&nbsp;by Plotly, but lighter and faster to develop with. It’s mainly meant for developing data dashboards and tools but you can extend that functionality to develop simple apps that can showcase your prototype app.<br></p>
+        <h3 class="text-uppercase fs-3 fw-semibold" style="text-align: left;color: #ffffff;background: #000000;font-family: 'Open Sans', sans-serif;">Step 0: SETUP</h3>
+        <p>Let’s start with the basics. Make sure you Python installed (3.7–3.10), PIP, and some IDE that you like. I like to use <a href="https://www.anaconda.com/products/distribution">Anaconda</a>&nbsp;to setup my environments and handle my dependancies.<br></p>
+        <p>If you are just starting with conda environments, then I suggest following&nbsp;<a href="https://medium.com/swlh/setting-up-a-conda-environment-in-less-than-5-minutes-e64d8fc338e4">this</a>&nbsp;article by&nbsp;<a href="https://swatikanchan.medium.com/">Swati Kanchan</a>. And then to install Streamlit type the following into your terminal:<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0" style="box-shadow: inset 0px 0px;">$ python -m pip install -U pip<br># if you are on a Mac<br>$ xccode-select --install<br># finally to install streamlit <br>$ pip install streamlit<br></code></div>
+        <p>Once this is done, you can test it out and make sure it is working by typing the following code into your terminal:<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">$ streamlit hello<br></code></div><img class="img-fluid border rounded-0 border-1 border-dark d-grid" src="../assets/img/Blog_pictures/first-web-app/streamlit-hello.png" width="1024" height="477" style="margin-top: 30px;">
+        <p>If all of this works, then you are set to start developing your basic app!<br></p>
+        <h1 class="text-uppercase fs-3 fw-semibold" style="color: #ffffff;font-family: 'Open Sans', sans-serif;background: #000000;">STEP 1: HELLO WORLD</h1>
+        <p style="margin-top: 30px;margin-bottom: 30px;">Let’s start with a Hello World. Create a file called helloWorld.py and then all you need are two lines of code:<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">import streamlit as st<br>st.title("Hello World")<br></code></div>
+        <p>Save it and type the following into your terminal to run the app:<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">$ streamlit run helloWorld.py<br></code></div>
+        <p>You should see a site like this:<br></p><img class="img-fluid border rounded-0 border-dark d-grid" src="../assets/img/Blog_pictures/first-web-app/Hello-world.png" width="1024" height="396">
+        <p>Now this isn’t much, I know, but it has so much potential. The <a href="https://docs.streamlit.io/">documentation</a> on streamlit is well organized and is a really good resource for building your site. In fact, they even have a <a href="https://docs.streamlit.io/library/cheatsheet">cheatsheet</a>.<br></p>
+        <h1 class="text-uppercase fs-3 fw-semibold" style="text-align: left;color: #ffffff;background: #000000;font-family: 'Open Sans', sans-serif;">STEP 2: MEME APP</h1>
+        <p>Let’s now add some functionality to this site. For example, we want to make a site where every time a button is clicked, a different meme from wholesome images is retrieved and displayed.<br></p>
+        <p>To obtain our meme, we are going to use the <a href="https://github.com/D3vd/Meme_Api">meme-api</a> app by D3vd. This returns a random meme. We can even define a subreddit if we want. For now let’s use r/<a href="https://www.reddit.com/r/wholesomememes/">wholesomememes </a>to keep everything G-rated. We can send a request and evaluate the json response to extract values like the link to the image, the title, and the author.<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">import json<br>import requests<br><br>def get_meme():<br> sr = 'wholesomememes'<br> url = 'https://meme-api.herokuapp.com/gimme/' + sr<br> response = json.loads(requests.request("GET", url).text)<br> my_meme = response["url"]<br> title = response["title"]<br> author = response["author"]<br> return my_meme, title, sr, author<br></code></div>
+        <p>Now we can go about and setup our web page. All we really need is a title (“Meme Generator”) and a button.<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">import streamlit as stst.title("Meme Generator")<br>st.button("Get Meme", on_click=lambda: refresh_meme)<br></code></div>
+        <p>Lastly, we need a function that runs every time our button is pressed.<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">from PIL import Imagedef refresh_meme():<br> my_meme, title, subreddit, author = get_meme()<br> st.image(my_meme, caption='{} by {} on r/{}'.format(title, author, subreddit), width=400)<br>refresh_meme() # so that it runs when you first load the page<br></code></div>
+        <p>Putting these three pieces of code together, you end up with a file like this:<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">import streamlit as st<br>import json<br>import requests<br>from PIL import Image<br><br>def get_meme():<br> sr = 'wholesomememes'<br> url = 'https://meme-api.herokuapp.com/gimme/' + sr<br> response = json.loads(requests.request("GET", url).text)<br> my_meme = response["url"]<br> title = response["title"]<br> author = response["author"]<br> return my_meme, title, sr, author<br><br>def refresh_meme():<br> my_meme, title, subreddit, author = get_meme()<br> st.image(my_meme, caption='{} by {} on r/{}'.format(title, author, subreddit), width=400)<br><br>def main():<br> st.title("Meme Generator")<br> st.button("Get Meme", on_click=lambda: refresh_meme)<br> refresh_meme()<br><br>if __name__ == '__main__':<br> main()<br></code></div>
+        <p>Again you can run this by typing the following into your terminal:<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">$ streamlit run meme_generator.py<br></code></div>
+        <p>And with that you end up with a web page that looks like this, with your own randomized meme! You can now click the ‘Get Meme’ button to your heart’s content!<br></p><img class="img-fluid border rounded-0 border-dark d-grid" src="../assets/img/Blog_pictures/first-web-app/meme-page.png" width="1024" height="356">
+        <p>We can even add a little more complexity, by giving the ability for the user to type in their own subreddit.<br></p>
+        <div class="border rounded-0"><code class="text-start bg-light border rounded-0">import streamlit as st<br>import json<br>import requests<br>from PIL import Image<br><br>class meme_generator:<br> def __init__(self):<br> st.title("Meme Generator")<br> st.button("Get Meme", on_click=lambda: self.refresh_meme)<br> self.text = st.text_input("Subreddit", value="wholesomememes")<br> self.refresh_meme()<br><br> def get_meme(self, sr='wholesomememes'):<br> sr = sr<br> url = 'https://meme-api.herokuapp.com/gimme/' + sr<br> response = json.loads(requests.request("GET", url).text)<br> my_meme = response["url"]<br> title = response["title"]<br> author = response["author"]<br> subreddit = response["subreddit"]<br> return my_meme, title, sr, author<br><br> def refresh_meme(self):<br> my_meme, title, subreddit, author = self.get_meme(self.text)<br> st.image(my_meme, caption='{} by {} on r/{}'.format(title, author, subreddit), width=400)<br><br><br>if __name__ == '__main__':<br> meme_generator()<br></code></div><img class="img-fluid border rounded-0 border-dark d-grid" src="../assets/img/Blog_pictures/first-web-app/meme-page2.png" width="1024" height="340" style="margin-top: 30px;margin-bottom: 30px;">
+        <h1 class="text-uppercase fs-3 fw-semibold" style="text-align: left;color: #ffffff;background: #000000;font-family: 'Open Sans', sans-serif;">STEP 3: DEPLOYING YOUR APP</h1>
+        <p>You have a fully functional web page where you can show off your skills, and perform your functions. But how can you share this with other people?<br><br>For this Streamlit makes it extremely easy for you.<br><br>First, you need to make your app a git repository. If you are wondering how to do this, follow <a href="https://medium.com/swlh/a-guide-to-creating-a-github-repository-ca76b0ff9ab4">this</a> tutorial by <a href="https://rayaan-siddiqi.medium.com/">Rayaan Siddiqi</a>.<br><br>Next, click on the menu bar in the top left of your page and click ‘Deploy this app’.<br></p><img class="img-fluid border rounded-0 border-dark d-grid" src="../assets/img/Blog_pictures/first-web-app/meme-page4.png" width="1024" height="401">
+        <p>This will take you to the setup page where you have to point to the file containing your code:<br></p><img class="border rounded-0 border-dark" width="1024" src="../assets/img/Blog_pictures/first-web-app/meme-page5.png">
+        <p>And finally, click deploy! After a few seconds your app is up and running for the world to see!<br></p>
+        <p>If you want to see my site follow this <a href="https://ar-meme-generator.streamlit.app/">link</a>.<br></p>
+        <h1 class="text-uppercase fs-3 fw-semibold" style="text-align: left;color: #ffffff;background: #000000;font-family: 'Open Sans', sans-serif;">CONCLUSION</h1>
+        <p>This way of making a web app definitely does not contain the complexity that a Django or flask app might. But if you are just starting out, need something quick, or don’t want to think about the front end, this is for you!<br></p>
+    </div>
+    <footer>
+        <footer style="padding-top: 0px;padding-bottom: 0px;">
+            <div class="container py-4 py-lg-5" style="margin-top: -64px;">
+                <hr>
+                <div class="d-flex justify-content-between align-items-center pt-3" style="padding-top: 43px;margin-top: -22px;">
+                    <p class="text-muted mb-0" style="font-size: 12px;padding-top: 0px;margin-top: -15px;">Adi Ravishankara © 2022</p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a class="text-start" href="https://www.linkedin.com/in/adiravishankara/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin" style="font-size: 50px;">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/adiravishankara"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github" style="font-size: 50px;">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item"><a href="https://medium.com/@adiravishankara"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-medium" style="font-size: 50px;">
+                                    <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"></path>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/clean-blog.js"></script>
+</body>
+
+</html>
