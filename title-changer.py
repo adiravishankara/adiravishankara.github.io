@@ -15,11 +15,8 @@ class TitleChanger:
             self.parse_html_file(element)
 
     def list_files(self):
-        #html_files = [file.replace('\\', '/') for file in glob.iglob('{}**/**'.format(os.getcwd()), recursive=True) if file[-4:] == 'html']
         html_files = glob.glob('**/**.html', recursive=True)
         html_files = [file.replace('\\','/') for file in html_files]
-        #file_names = [file[file.index('.io')+4:] for file in html_files]
-        #file_dict = dict.fromkeys(file_names, html_files)
 
         return html_files
 
