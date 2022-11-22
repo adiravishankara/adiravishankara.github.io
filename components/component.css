@@ -1,0 +1,49 @@
+.component-container {
+  width: 100%;
+  height: 498px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1668876983353-a583a7a5fa50?ixid=Mnw5MTMyMXwwfDF8YWxsfDE3fHx8fHx8Mnx8MTY2OTA3NTcyOA&ixlib=rb-4.0.3&w=1500');
+  background-position: center;
+}
+.component-container1 {
+  flex: 0 0 auto;
+  left: 0px;
+  right: 0px;
+  width: 659px;
+  bottom: 0px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-self: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: center;
+}
+.component-text {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  align-self: flex-end;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media(max-width: 479px) {
+  .component-container1 {
+    left: 0px;
+    right: 0px;
+    width: auto;
+    bottom: 0px;
+    margin: auto;
+    position: absolute;
+  }
+  .component-text {
+    width: auto;
+    height: auto;
+    align-self: center;
+    text-align: center;
+  }
+}
